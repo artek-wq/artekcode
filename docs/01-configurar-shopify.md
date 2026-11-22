@@ -10,7 +10,9 @@ Guía paso a paso para crear la tienda y conectarla a este frontend. Haz los pas
 
 ## 1.2 Instalar el canal Hydrogen
 
-1. **Tienda en línea / Canales de ventas → Agregar canal → Hydrogen** (app oficial de Shopify).
+1. Hydrogen **no aparece** en la lista de canales instalados hasta que lo instalas. En **Canales de ventas** haz clic en **Shopify App Store** (arriba a la derecha), busca **Hydrogen** (app oficial de Shopify) e instálala. También puedes abrir directo https://apps.shopify.com/hydrogen con la sesión de tu tienda iniciada.
+   - Requiere un **plan de pago** (Basic o superior). En periodo de prueba o en tiendas de desarrollo puede no aparecer o no dejar instalarlo.
+   - Tu usuario debe tener permiso de **Apps y canales** (el propietario lo tiene).
 2. Crea un *storefront* llamado `oso-shop`.
 3. Conecta el repositorio de GitHub `artek-wq/artekcode`. Cada push a la rama principal publica la tienda; cada rama genera una vista previa.
 4. En tu equipo, dentro del proyecto:
