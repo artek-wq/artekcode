@@ -1,8 +1,8 @@
 # 3. Pendientes y siguientes fases
 
 ## Necesito de ti
-- [ ] **Logo** en SVG (va en `app/assets/logo.svg`; hoy hay uno provisional 🐻).
-- [ ] Validar o ajustar la **paleta** propuesta (`app/styles/tailwind.css`).
+- [x] Logo preliminar aplicado (`app/assets/logo.png`). Pendiente: versión final en SVG.
+- [x] Paleta azul basada en el logo (#32ABE0) aprobada (`app/styles/tailwind.css`).
 - [ ] Monto definitivo de **envío gratis** (hoy $999 MXN).
 - [ ] Tiempos reales por origen (hoy 1–3 / 2–5 / 10–20 días hábiles).
 - [ ] Crear la tienda y el canal Hydrogen ([guía](01-configurar-shopify.md)).
