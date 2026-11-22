@@ -1,5 +1,6 @@
 import {Form, Link, NavLink, useLocation, useSearchParams} from 'react-router';
 import {useEffect, useState} from 'react';
+import logo from '~/assets/logo.png';
 import {ANIMALS, ANIMAL_KEYS, CATEGORIES, CATEGORY_KEYS, LOCALES, ORIGIN_KEYS, STORE, type Locale} from '~/lib/config';
 import {freeShippingThreshold, useLocale, useMoney, useRootData, useT} from '~/lib/i18n';
 import {useCart, useWishlist} from './providers';
@@ -45,12 +46,11 @@ function TopBanner() {
 }
 
 export function Logo({className = ''}: {className?: string}) {
-  // Reemplazar por el logo oficial: coloca el archivo en app/assets/logo.svg e impórtalo aquí.
   return (
-    <Link to="/" className={`flex items-center gap-1.5 rounded px-1 font-extrabold tracking-tight text-white ${className}`} aria-label={STORE.name}>
-      <span className="grid size-8 place-items-center rounded-full bg-cta text-lg">🐻</span>
+    <Link to="/" className={`flex items-center gap-2 rounded px-1 font-extrabold tracking-tight text-white ${className}`} aria-label={STORE.name}>
+      <img src={logo} alt="" width={52} height={32} className="h-8 w-auto" />
       <span className="text-xl leading-none">
-        Oso<span className="text-cta">Shop</span>
+        Oso<span className="text-logo">Shop</span>
       </span>
     </Link>
   );

@@ -12,7 +12,7 @@ import {
   useRouteLoaderData,
 } from 'react-router';
 import type {Route} from './+types/root';
-import favicon from '~/assets/favicon.svg';
+import favicon from '~/assets/logo.png';
 import tailwindCss from './styles/tailwind.css?url';
 import {Layout as StoreLayout} from '~/components/Layout';
 import {CartProvider, WishlistProvider} from '~/components/providers';
@@ -31,7 +31,7 @@ export const shouldRevalidate: ShouldRevalidateFunction = ({formMethod, currentU
 export function links() {
   return [
     {rel: 'preconnect', href: 'https://cdn.shopify.com'},
-    {rel: 'icon', type: 'image/svg+xml', href: favicon},
+    {rel: 'icon', type: 'image/png', href: favicon},
   ];
 }
 
@@ -63,7 +63,7 @@ export const meta: Route.MetaFunction = ({data}) => {
   return [
     {title: `${STORE.name} · ${translate(locale, 'home.heroTitle')}`},
     {name: 'description', content: translate(locale, 'home.heroBody')},
-    {name: 'theme-color', content: '#16211c'},
+    {name: 'theme-color', content: '#0c2a3e'},
   ];
 };
 
